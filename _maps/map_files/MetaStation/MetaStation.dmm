@@ -30253,11 +30253,7 @@
 /turf/open/floor/plasteel/dark,
 /area/bridge)
 "bow" = (
-/obj/machinery/computer/security/wooden_tv{
-	pixel_x = 1;
-	pixel_y = 6
-	},
-/obj/structure/table/glass,
+/obj/machinery/computer/vox,
 /turf/open/floor/plasteel/dark,
 /area/bridge)
 "box" = (
@@ -30265,12 +30261,7 @@
 	dir = 4
 	},
 /obj/structure/table/glass,
-/obj/item/folder/blue{
-	pixel_y = 2
-	},
-/obj/item/folder/blue{
-	pixel_y = 2
-	},
+/obj/machinery/computer/security/wooden_tv,
 /turf/open/floor/plasteel/dark,
 /area/bridge)
 "boy" = (
@@ -31222,6 +31213,12 @@
 	pixel_y = 8
 	},
 /obj/structure/table/glass,
+/obj/item/folder/blue{
+	pixel_y = 2
+	},
+/obj/item/folder/blue{
+	pixel_y = 2
+	},
 /turf/open/floor/plasteel/dark,
 /area/bridge)
 "bqP" = (
