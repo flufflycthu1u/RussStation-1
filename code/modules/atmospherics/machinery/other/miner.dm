@@ -41,6 +41,16 @@
 	if(!active)
 		return FALSE
 	var/turf/T = get_turf(src)
+	//honk start -- limit gas miners to only be able to mine in atmos
+	if(panel_open)
+		broken_message = "<span class='boldnotice'>MAINTENANCE PANEL OPEN</span>"
+		set_broken(TRUE)
+		return FALSE
+	if(is_station_level(T.z) && !istype(get_area(T), /area/engine/atmos))
+		broken_message = "<span class='boldnotice'>UNSAFE MINING AREA</span>"
+		set_broken(TRUE)
+		return FALSE
+	//honk end
 	if(!isopenturf(T))
 		broken_message = "<span class='boldnotice'>VENT BLOCKED</span>"
 		set_broken(TRUE)
